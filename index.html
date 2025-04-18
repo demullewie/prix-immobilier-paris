@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prix Immobilier Paris</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Évolution des Prix Immobiliers à Paris</h1>
+            <p>Analyse mensuelle depuis Janvier 2020</p>
+            <div class="filter-container">
+                <label for="arrondissement">Arrondissement :</label>
+                <select id="arrondissement" class="arrondissement-select">
+                    <option value="all">Tous les arrondissements</option>
+                    <option value="1">1er</option>
+                    <option value="2">2ème</option>
+                    <option value="3">3ème</option>
+                    <option value="4">4ème</option>
+                    <option value="5">5ème</option>
+                    <option value="6">6ème</option>
+                    <option value="7">7ème</option>
+                    <option value="8">8ème</option>
+                    <option value="9">9ème</option>
+                    <option value="10">10ème</option>
+                    <option value="11">11ème</option>
+                    <option value="12">12ème</option>
+                    <option value="13">13ème</option>
+                    <option value="14">14ème</option>
+                    <option value="15">15ème</option>
+                    <option value="16">16ème</option>
+                    <option value="17">17ème</option>
+                    <option value="18">18ème</option>
+                    <option value="19">19ème</option>
+                    <option value="20">20ème</option>
+                </select>
+            </div>
+        </header>
+        
+        <main>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Prix Moyen</h3>
+                    <p id="averagePrice">-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Variation Annuelle</h3>
+                    <p id="yearlyChange">-</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tendance</h3>
+                    <p id="trend">-</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Données mises à jour mensuellement | Source: Brave Search</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
